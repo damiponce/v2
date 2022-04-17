@@ -1,0 +1,83 @@
+
+title = "Design"
+
+[cards.e]
+type = "main"
+title = "Spotify playlists"
+bio = "Dos cosas que me encantan son la música y el diseño, asi que cuál mejor combinación de ámbas que diseñar portadas para mis playlists de Spotify."
+
+[cards.b]
+type = "image"
+image =  "designs/rewind-music.jpg"
+[cards.c]
+type = "image"
+image =  "designs/headbangerz.jpg"
+[cards.d]
+type = "image"
+image =  "designs/nacionalmente-bueno.jpg"
+[cards.a]
+type = "image"
+image =  "designs/blues.jpg"
+[cards.f]
+type = "image"
+image =  "designs/bangers.png"
+[cards.g]
+type = "image"
+image =  "designs/rap-masters.jpg"
+[cards.h]
+type = "image"
+image =  "designs/rap-spotify.jpg"
+[cards.i]
+type = "image"
+image =  "designs/jazz.jpg"
+
+
+
+
+[grid]
+
+areas_three = """
+a b c
+a b c
+a b c
+d e f
+d e f
+d e f
+g h i
+g h i
+g h i
+"""
+
+areas_two = """
+a b
+a b
+a b
+c d
+c d
+c d
+e f
+e f
+e f
+"""  
+
+areas_one = """
+a
+a
+a
+b
+b
+b
+c
+c
+c
+d
+d
+d
+e
+e
+e
+f
+f
+f
+"""  
+

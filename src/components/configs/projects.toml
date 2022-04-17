@@ -1,0 +1,13 @@
+[notes]
+   title="Notee"
+   desc="A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source.\n A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source."
+   img="designs/rainbow-sth.png"
+   techs=["React Native","Firebase","Android Studio","Xcode"]
+   links.github="https://github.com/damiponce/notee"
+
+[books]
+   title="Book sorting"
+   desc="A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source."
+   img="dam-headshot.jpeg"
+   techs=["React Native","Firebase","Android Studio","Xcode"]
+   links.github="https://github.com/damiponce/notee"

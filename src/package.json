@@ -1,0 +1,35 @@
+{
+   "name": "portfolio-v2",
+   "version": "0.1.0",
+   "private": true,
+   "scripts": {
+      "dev": "next dev",
+      "build": "next build && next export",
+      "start": "next start",
+      "lint": "next lint"
+   },
+   "dependencies": {
+      "@ltd/j-toml": "^1.30.0",
+      "@plaiceholder/next": "^2.3.0",
+      "lodash": "^4.17.21",
+      "next": "12.1.0",
+      "plaiceholder": "^2.3.0",
+      "react": "17.0.2",
+      "react-dom": "17.0.2",
+      "react-icons": "^4.3.1",
+      "react-scripts": "^5.0.1",
+      "react-scroll-parallax": "^3.0.3",
+      "react-thumbor-img": "^4.0.3",
+      "sass": "^1.49.8",
+      "sharp": "^0.30.2",
+      "thumbor": "^0.1.5"
+   },
+   "devDependencies": {
+      "@types/lodash": "^4.14.179",
+      "@types/node": "17.0.19",
+      "@types/react": "17.0.39",
+      "eslint": "8.9.0",
+      "eslint-config-next": "12.1.0",
+      "typescript": "4.5.5"
+   }
+}
