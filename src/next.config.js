@@ -21,7 +21,6 @@ const nextConfig = {
       }
       return config;
    },
-   // assetPrefix: process.env.NODE_ENV === 'production' ? 'https://raw.githubusercontent.com/damiponce/v2/gh-pages/' : '',
-   assetPrefix: '.'
+   assetPrefix: process.env.NODE_ENV === 'production' ? 'https://raw.githubusercontent.com/damiponce/v2/gh-pages/' : '.',
 };
 module.exports = nextConfig;
