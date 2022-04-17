@@ -27,6 +27,8 @@ jobs:
               with:
                   node-version: '16'
             - run: npm install --legacy-peer-deps
+              env:
+                  THUMBOR_KEY: ${{ secrets.THUMBOR_KEY }}
             - run: npm run build
               env:
                   CI: true
