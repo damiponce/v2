@@ -127,7 +127,7 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
                name="viewport"
                content="width=device-width, initial-scale=1, viewport-fit=cover"
             />
-            <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+            {/* <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" /> */}
             {/* <meta name="theme-color" content="#319197" /> */}
             <title>Portfolio v2</title>
             <meta name="description" content="" />
