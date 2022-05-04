@@ -26,6 +26,14 @@ import {
    FiExternalLink,
 } from 'react-icons/fi';
 
+import { AdvancedImage } from '@cloudinary/react';
+import { CloudinaryImage, Cloudinary } from '@cloudinary/url-gen';
+import { fill } from '@cloudinary/url-gen/actions/resize';
+import { dpr } from '@cloudinary/url-gen/actions/delivery';
+import { auto } from '@cloudinary/url-gen/qualifiers/dpr';
+
+const myCld = new Cloudinary({ cloud: { cloudName: 'damiponce' } });
+
 export const getStaticProps: GetStaticProps = async (context) => {
    let configs: { name: string; config: string }[] = [];
 
@@ -194,8 +202,14 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
                      </ul>
                   </li>
                </div>
-
-               <ThumborImage
+               <AdvancedImage
+                  cldImg={myCld
+                     .image('dam-headshot_zs7crm.webp')
+                     .resize(fill().width(300).height(300).gravity('face'))
+                     .quality(95)
+                     .delivery(dpr(auto()))}
+               />
+               {/* <ThumborImage
                   width={300}
                   height={300}
                   src={'dam-headshot.jpeg'}
@@ -203,7 +217,7 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
                      borderRadius: '7%',
                   }}
                   thumborKey={thumbor}
-               />
+               /> */}
             </Section>
 
             {/* <Section name="Diseño" id="design" width="1100px">
