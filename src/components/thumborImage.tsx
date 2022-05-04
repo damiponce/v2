@@ -55,7 +55,7 @@ const ThumborImage: React.FC<ThumborImageType> = ({
       thumborKey,
       // '4d7cccbd17064a12dd43021668679f7b488afd55aab1502e0ca8a55f5a8e2c0b',
       process.env.NODE_ENV === 'production'
-         ? 'http://13.92.59.236:6969'
+         ? 'https://damianponce.xyz/'
          : 'http://192.168.0.69:6969'
    );
 
