@@ -1,13 +1,10 @@
 import '../styles/globals.scss';
 import type { AppProps } from 'next/app';
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { appWithTranslation } from 'next-i18next';
 
-function MyApp({ Component, pageProps }: AppProps) {
-   return (
-      <ParallaxProvider>
-         <Component {...pageProps} />
-      </ParallaxProvider>
-   );
+function App({ Component, pageProps }: AppProps) {
+   //@ts-ignore
+   return <Component {...pageProps} />;
 }
 
-export default MyApp;
+export default appWithTranslation(App);

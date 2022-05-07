@@ -1,0 +1,83 @@
+{
+   "notes": {
+      "title": "Notee",
+      "desc": "A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source.\n A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source.",
+      "img": "designs/rainbow-sth.png",
+      "techs": ["React Native", "Firebase", "Android Studio", "Xcode"],
+      "links": {
+         "github": "https://github.com/damiponce/notee"
+      }
+   },
+   "penpal": {
+      "title": "PenWorld",
+      "desc": "",
+      "img": "sth.png",
+      "techs": ["React Native", "Firebase", "Android Studio", "Xcode"],
+      "links": {
+         "github": "https://github.com/damiponce/"
+      }
+   },
+   "wppstats": {
+      "title": "WhatsApp Stats",
+      "desc": "A purely frontend web app that calculates and displays various statistics from an imported WhatsApp chat history. Designed with user trust in mind, it does all of the processing in the browser so no ammount of the (very personal) data is transferred outside of the user's computer.",
+      "img": "sth.png",
+      "techs": ["React (Next.js)", "PYTHON SHIT"],
+      "links": {
+         "github": "https://github.com/damiponce/"
+      }
+   },
+   "weather": {
+      "title": "Weather App",
+      "desc": "A website that displays the weather with data from a variety of weather APIs that the user can select.",
+      "img": "sth.png",
+      "techs": ["React (Next.js)"],
+      "links": {
+         "github": "https://github.com/damiponce/"
+      }
+   },
+   "books": {
+      "title": "Book sorting",
+      "desc": "A small and simple web app I created in high school to sort my notebooks most efficiently for daily use.",
+      "img": "dam-headshot.jpeg",
+      "techs": ["Javascript", "p5.js"],
+      "links": {
+         "github": "https://github.com/damiponce/"
+      }
+   },
+   "morse": {
+      "title": "Morse code generator",
+      "desc": "Made for a school fair project, it uses an text input to trigger a relay connected to a strobe light, made to show morse code at an airfield tower.",
+      "img": "sth.png",
+      "techs": ["Processing", "Arduino"],
+      "links": {
+         "github": "https://github.com/damiponce/"
+      }
+   },
+   "calculator": {
+      "title": "Simple calculator",
+      "desc": "A very basic (pun intended) and rudimentary calculator. It was a school assignment so it's not very polished but some stuff works.",
+      "img": "sth.png",
+      "techs": ["Visual Basic"],
+      "links": {
+         "github": "https://github.com/damiponce/"
+      }
+   },
+   "minesweeper": {
+      "title": "Minesweeper",
+      "desc": "Tiny implementation of the classic Minesweeper game.",
+      "img": "sth.png",
+      "techs": ["C"],
+      "links": {
+         "github": "https://github.com/damiponce/"
+      }
+   },
+   "pendulum": {
+      "title": "Double pendulum",
+      "desc": "",
+      "img": "sth.png",
+      "techs": ["Processing"],
+      "links": {
+         "github": "https://github.com/damiponce/"
+      }
+   }
+}
