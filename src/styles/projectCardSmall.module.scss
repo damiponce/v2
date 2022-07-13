@@ -50,12 +50,20 @@
    flex-wrap: wrap-reverse;
 
    span {
-      color: #aaa;
+      color: #adaabe;
       font-family: Overpass Mono, monospace;
       font-weight: 300;
       font-size: 0.7rem;
       white-space: nowrap;
    }
+}
+
+.links {
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   gap: 16px;
+   padding-left: 24px;
 }
 
 @media (max-width: 450px) {

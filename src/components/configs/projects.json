@@ -2,7 +2,7 @@
    "notes": {
       "title": "Notee",
       "desc": "A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source.\n A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source.",
-      "img": "designs/rainbow-sth.png",
+      "img": "dam-headshot_zs7crm.webp",
       "techs": ["React Native", "Firebase", "Android Studio", "Xcode"],
       "links": {
          "github": "https://github.com/damiponce/notee"
@@ -14,7 +14,7 @@
       "img": "sth.png",
       "techs": ["React Native", "Firebase", "Android Studio", "Xcode"],
       "links": {
-         "github": "https://github.com/damiponce/"
+         "github": "https://github.com/damiponce/penworld"
       }
    },
    "wppstats": {
@@ -23,7 +23,8 @@
       "img": "sth.png",
       "techs": ["React (Next.js)", "PYTHON SHIT"],
       "links": {
-         "github": "https://github.com/damiponce/"
+         "github": "https://github.com/damiponce/chat-analyser",
+         "website": "https://damiponce.github.io/chat-analyser/"
       }
    },
    "weather": {
@@ -32,7 +33,7 @@
       "img": "sth.png",
       "techs": ["React (Next.js)"],
       "links": {
-         "github": "https://github.com/damiponce/"
+         "github": "https://github.com/damiponce/weather-web"
       }
    },
    "books": {
@@ -41,7 +42,7 @@
       "img": "dam-headshot.jpeg",
       "techs": ["Javascript", "p5.js"],
       "links": {
-         "github": "https://github.com/damiponce/"
+         "github": "https://github.com/damiponce/book-sorting"
       }
    },
    "morse": {

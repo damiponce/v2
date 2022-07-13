@@ -5,5 +5,6 @@ export interface Project {
    techs: string[];
    links: {
       github: string;
+      website?: string;
    };
 }

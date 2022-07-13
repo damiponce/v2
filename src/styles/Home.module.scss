@@ -33,8 +33,11 @@
    font-weight: 400;
    font-size: 0.8rem;
 
+   & p {
+      color: #adaabe;
+   }
    & a {
-      // color: #ccc;
+      color: #adaabe;
       transition: cubic-bezier(0.25, 1, 0.25, 1) 0.7s;
 
       &:hover {
@@ -98,6 +101,13 @@
    padding: 25px 0 25px 0;
    min-height: 100vh;
    // border: 2px solid #f004;
+
+   p {
+      color: #adaabe;
+   }
+   ul {
+      color: #adaabe;
+   }
 }
 
 .section h2:first-child {
