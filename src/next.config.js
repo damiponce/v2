@@ -3,7 +3,6 @@
 // const { withPlaiceholder } = require("@plaiceholder/next");
 
 const nextConfig = {
-   trailingSlash: true,
    reactStrictMode: true,
    images: {
       loader: 'custom',
