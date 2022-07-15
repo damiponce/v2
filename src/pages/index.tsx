@@ -24,6 +24,7 @@ import {
    FiChevronRight,
    FiChevronsRight,
    FiExternalLink,
+   FiCornerDownRight,
 } from 'react-icons/fi';
 
 import { AdvancedImage } from '@cloudinary/react';
@@ -141,6 +142,8 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
                name="viewport"
                content="width=device-width, initial-scale=1, viewport-fit=cover"
             />
+            <meta name="theme-color" content="#04141A"></meta>
+
             {/* <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" /> */}
             {/* <meta name="theme-color" content="#319197" /> */}
             <title>Portfolio v2</title>
@@ -159,10 +162,8 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
                </h1>
                <p className={styles.description}>
                   Soy un desarrollador aficionado, y un diseñador gráfico y
-                  fotógrafo por diversión. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Sed euismod, ipsum eget
-                  consectetur elementum, nisl nisl aliquet nunc, eu porttitor
-                  nisi nisl euismod nunc.
+                  fotógrafo por diversión.
+                  {/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA. */}
                </p>
             </div>
             <Section
@@ -173,40 +174,54 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
             >
                <div>
                   <p>
-                     Soy un técnico en aviónica con intereses en la
-                     programación, el diseño y la fotografía. Actualmente estoy
-                     estudiando ingeniería aeronáutica. Soy una persona
-                     autodidacta, y muy atenta a los detalles finos al momento
-                     de trabajar en cualquier proyecto.
+                     Soy un técnico aviónico con intereses en la programación,
+                     el diseño y la fotografía. Actualmente estoy estudiando
+                     ingeniería electrónica. Soy una persona autodidacta, y muy
+                     atenta a los detalles finos al momento de trabajar en
+                     cualquier proyecto.
+                     <br />
+                     <br /> Algunos de los lenguajes y frameworks que manejo:
                   </p>
-                  {/* <p>
-                     Aliquip esse proident ad deserunt esse consequat mollit
-                     pariatur minim non officia minim cupidatat voluptate.
-                     Excepteur aliqua dolor commodo sit duis laboris esse
-                     voluptate velit. Non nisi sed elit consequat quis culpa
-                     mollit enim nulla dolor do tempor lorem.
-                  </p> */}
-                  <p>Algunos de los lenguajes que manejo:</p>
-                  <li>
+                  <div className={styles.proficiencies}>
                      <ul>
-                        <FiChevronRight /> React Native
+                        <li>
+                           <FiChevronRight /> HTML/CSS/SASS
+                        </li>
+                        <li>
+                           <FiChevronRight /> JavaScript
+                           <ul>
+                              <li>
+                                 <FiCornerDownRight /> Typescript
+                              </li>
+                              <li>
+                                 <FiCornerDownRight /> React
+                              </li>
+                              <li>
+                                 <FiCornerDownRight /> React Native
+                              </li>
+                           </ul>
+                        </li>
                      </ul>
                      <ul>
-                        <FiChevronRight /> React Native
+                        <li>
+                           <FiChevronRight /> LaTeX
+                        </li>
+                        <li>
+                           <FiChevronRight /> Python
+                           <ul>
+                              <li>
+                                 <FiCornerDownRight /> Pandas
+                              </li>
+                              <li>
+                                 <FiCornerDownRight /> Matplotlib
+                              </li>
+                              <li>
+                                 <FiCornerDownRight /> Numpy
+                              </li>
+                           </ul>
+                        </li>
                      </ul>
-                     <ul>
-                        <FiChevronRight /> React Native
-                     </ul>
-                     <ul>
-                        <FiChevronRight /> React Native
-                     </ul>
-                     <ul>
-                        <FiChevronRight /> React Native
-                     </ul>
-                     <ul>
-                        <FiChevronRight /> React Native
-                     </ul>
-                  </li>
+                  </div>
                </div>
                <AdvancedImage
                   cldImg={myCld
@@ -255,6 +270,10 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
                      );
                   })}
                </div>
+            </Section>
+
+            <Section name="Contacto" id="contact" width="800px">
+               <></>
             </Section>
          </main>
 

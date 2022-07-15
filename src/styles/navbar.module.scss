@@ -12,8 +12,8 @@ $h1: 300px;
    z-index: 69;
    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-   -webkit-backdrop-filter: blur(45px);
-   backdrop-filter: blur(45px);
+   -webkit-backdrop-filter: blur(15px);
+   backdrop-filter: blur(15px);
 
    display: flex;
    flex-flow: row wrap;
@@ -44,7 +44,7 @@ $h1: 300px;
 
    .sticky,
    .hidden {
-      box-shadow: 0 10px 30px -10px black;
+      // box-shadow: 0 10px 30px -10px black;
    }
 }
 

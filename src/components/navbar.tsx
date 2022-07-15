@@ -61,7 +61,7 @@ const Navbar = () => {
       // { name: 'Fotografía', id: 'photography' },
       // { name: 'Diseño', id: 'design' },
       { name: 'Proyectos', id: 'projects' },
-      // { name: 'Contacto', id: 'contact' },
+      { name: 'Contacto', id: 'contact' },
    ];
 
    return (

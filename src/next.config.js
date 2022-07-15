@@ -6,7 +6,12 @@ const nextConfig = {
    reactStrictMode: true,
    images: {
       loader: 'custom',
-      domains: ['localhost', '13.92.59.236', '192.168.0.69'],
+      domains: [
+         'localhost',
+         '13.92.59.236',
+         '192.168.0.69',
+         'cdn.statically.io',
+      ],
       imageSizes: [16, 32, 48, 64],
       deviceSizes: [
          96, 128, 256, 384, 512, 640, 750, 828, 1080, 1200, 1920, 2048, 3840,

@@ -1,3 +1,5 @@
+$bg-color: #04141a;
+
 .main {
    position: relative;
    display: grid;
@@ -89,6 +91,9 @@
    max-width: 83.3%;
 
    span {
+      display: inline;
+      background-color: $bg-color;
+      box-decoration-break: clone;
       color: #adaabe;
       font-family: Overpass Mono, monospace;
       font-weight: 300;

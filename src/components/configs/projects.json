@@ -1,4 +1,14 @@
 {
+   "wppstats": {
+      "title": "WhatsApp Stats",
+      "desc": "A purely frontend web app that calculates and displays various statistics from an imported WhatsApp chat history. Designed with user trust in mind, it does all of the processing in the browser so no amount of the (very personal) data is transferred outside of the user's computer.",
+      "img": "sth.png",
+      "techs": ["React (Next.js)", "Python (Pandas)"],
+      "links": {
+         "github": "https://github.com/damiponce/chat-analyser",
+         "website": "https://damiponce.github.io/chat-analyser/"
+      }
+   },
    "notes": {
       "title": "Notee",
       "desc": "A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source.\n A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source.",
@@ -17,16 +27,6 @@
          "github": "https://github.com/damiponce/penworld"
       }
    },
-   "wppstats": {
-      "title": "WhatsApp Stats",
-      "desc": "A purely frontend web app that calculates and displays various statistics from an imported WhatsApp chat history. Designed with user trust in mind, it does all of the processing in the browser so no ammount of the (very personal) data is transferred outside of the user's computer.",
-      "img": "sth.png",
-      "techs": ["React (Next.js)", "PYTHON SHIT"],
-      "links": {
-         "github": "https://github.com/damiponce/chat-analyser",
-         "website": "https://damiponce.github.io/chat-analyser/"
-      }
-   },
    "weather": {
       "title": "Weather App",
       "desc": "A website that displays the weather with data from a variety of weather APIs that the user can select.",
@@ -34,6 +34,16 @@
       "techs": ["React (Next.js)"],
       "links": {
          "github": "https://github.com/damiponce/weather-web"
+      }
+   },
+   "v1": {
+      "title": "Portfolio v1",
+      "desc": "My first try at making a personal website to show off my capabilities and skills. It's a bit of a mess, but it's a start.",
+      "img": "dam-headshot.jpeg",
+      "techs": ["React (Next.js)"],
+      "links": {
+         "github": "https://github.com/damiponce/v1",
+         "website": "https://damiponce.github.io/v1/"
       }
    },
    "books": {
