@@ -25,7 +25,11 @@ import {
    FiChevronsRight,
    FiExternalLink,
    FiCornerDownRight,
+   FiMail,
+   FiGithub,
+   FiLinkedin,
 } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
 
 import { AdvancedImage } from '@cloudinary/react';
 import { CloudinaryImage, Cloudinary } from '@cloudinary/url-gen';
@@ -272,24 +276,48 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
                </div>
             </Section>
 
-            <Section name="Contacto" id="contact" width="800px">
-               <></>
+            <Section name="Contacto" id="contact" width="600px">
+               <div>
+                  <p>
+                     Si deseas contactarte conmigo para contratarme o trabajar
+                     en algún proyecto, puedes enviarme un correo electrónico o
+                     un mensaje por alguna de mis redes:
+                  </p>
+                  <div className={styles.contact_button_list}>
+                     <Link href="mailto:dami.ponce8@gmail.com">
+                        <a target="_blank" rel="noopener noreferrer">
+                           <button className={styles.contact_button}>
+                              <FiMail size={22} />
+                           </button>
+                        </a>
+                     </Link>
+                     <Link href="https://wa.me/5491134290789">
+                        <a target="_blank" rel="noopener noreferrer">
+                           <button className={styles.contact_button}>
+                              <FaWhatsapp size={22} />
+                           </button>
+                        </a>
+                     </Link>
+                     <Link href="https://github.com/damiponce">
+                        <a target="_blank" rel="noopener noreferrer">
+                           <button className={styles.contact_button}>
+                              <FiGithub size={22} />
+                           </button>
+                        </a>
+                     </Link>
+                     <Link href="https://www.linkedin.com/in/damianponce">
+                        <a target="_blank" rel="noopener noreferrer">
+                           <button className={styles.contact_button}>
+                              <FiLinkedin size={22} />
+                           </button>
+                        </a>
+                     </Link>
+                  </div>
+               </div>
             </Section>
          </main>
 
          <footer className={styles.footer}>
-            {/* <p>
-               Design heavily inspired by{' '}
-               <b>
-                  <a
-                     href="https://brittanychiang.com"
-                     target="_blank"
-                     rel="noreferrer"
-                  >
-                     Brittany Chiang <FiExternalLink />
-                  </a>
-               </b>
-            </p> */}
             <p>
                Built from scratch by{' '}
                <b>
