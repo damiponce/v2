@@ -1,28 +1,14 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 import Navbar from '../components/navbar';
-import { BannerLayer } from 'react-scroll-parallax/dist/components/ParallaxBanner/types';
-import { ParallaxBanner } from 'react-scroll-parallax';
-import ThumborImage from '../components/thumborImage';
-import BigCard from '../components/bigCard';
 import { Project } from '../components/projectCard.d';
-// var Thumbor = require('thumbor');
-// var thumbor = new Thumbor(
-//    '4d7cccbd17064a12dd43021668679f7b488afd55aab1502e0ca8a55f5a8e2c0b',
-//    'http://localhost:8888'
-// );
 import ProjectCardSmall from '../components/projectCardSmall';
-import TOML from '@ltd/j-toml';
-import fs from 'fs';
 import ProjectCard from '../components/projectCard';
 import Link from 'next/link';
 import {
    FiChevronRight,
-   FiChevronsRight,
    FiExternalLink,
    FiCornerDownRight,
    FiMail,
@@ -32,43 +18,14 @@ import {
 import { FaWhatsapp } from 'react-icons/fa';
 
 import { AdvancedImage } from '@cloudinary/react';
-import { CloudinaryImage, Cloudinary } from '@cloudinary/url-gen';
+import { Cloudinary } from '@cloudinary/url-gen';
 import { fill } from '@cloudinary/url-gen/actions/resize';
 import { dpr } from '@cloudinary/url-gen/actions/delivery';
 import { auto } from '@cloudinary/url-gen/qualifiers/dpr';
 
 const myCld = new Cloudinary({ cloud: { cloudName: 'damiponce' } });
 
-import {
-   useTranslation,
-   useLanguageQuery,
-   LanguageSwitcher,
-} from 'next-export-i18n';
-
-// export const getStaticProps: GetStaticProps = async (context) => {
-//    let configs: { name: string; config: string }[] = [];
-
-//    fs.readdirSync('./components/configs/').forEach((file) => {
-//       configs.push({
-//          name: file.replace('.toml', ''),
-//          config: JSON.stringify(
-//             TOML.parse(
-//                fs.readFileSync(`./components/configs/${file}`, 'utf8'),
-//                { joiner: '\n', bigint: false }
-//             )
-//          ),
-//       });
-//    });
-
-//    var thumbor = process.env.THUMBOR_KEY;
-
-//    return {
-//       props: {
-//          configs,
-//          thumbor,
-//       },
-//    };
-// };
+import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 
 const Section = ({
    children,
@@ -97,24 +54,9 @@ const Section = ({
 
 interface HomeTypes {
    configs: any;
-   thumbor: any;
 }
 
-const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
-   // const headline: BannerLayer = {
-   //    translateY: [0, 30],
-   //    // scale: [1, 1.05, 'easeOutCubic'],
-   //    shouldAlwaysCompleteAnimation: true,
-   //    expanded: false,
-   //    children: (
-   //       <>
-   //          {/* <div className="bg_blur" /> */}
-   //          <div className="bg" />
-   //       </>
-   //    ),
-   // };
-   // console.log(JSON.parse(configs[2].config));
-
+const Home: NextPage<HomeTypes> = ({ configs }) => {
    let testConfig = require('../components/configs/projects.json');
    let projects: Project[] = [];
    for (const [key, value] of Object.entries(testConfig)) {
@@ -122,43 +64,19 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
       projects.push(value);
    }
 
-   // for (const [key, value] of Object.entries(
-   //    JSON.parse(
-   //       configs.find((cfg: any) => {
-   //          return cfg.name === 'projects';
-   //       }).config
-   //    )
-   // )) {
-   //    //@ts-ignore
-   //    projects.push(value);
-   // }
-
    const { t } = useTranslation();
    const [query] = useLanguageQuery();
 
    return (
       <div className={styles.container}>
-         {/* <ParallaxBanner
-            layers={[headline]}
-            style={{
-               position: 'absolute',
-               top: 0,
-               bottom: 0,
-               left: 0,
-               right: 0,
-            }}
-         /> */}
-         {/* <div className="bg_blur" /> */}
          <div className="bg" />
          <Head>
             <meta
                name="viewport"
                content="width=device-width, initial-scale=1, viewport-fit=cover"
             />
-            <meta name="theme-color" content="#04141A"></meta>
+            <meta name="theme-color" content="#04141A" />
 
-            {/* <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" /> */}
-            {/* <meta name="theme-color" content="#319197" /> */}
             <title>Portfolio v2</title>
             <meta name="description" content="" />
          </Head>
@@ -167,10 +85,7 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
          <main className={styles.main}>
             <div className={styles.intro}>
                <h1 className={styles.title}>{t('intro.title')}</h1>
-               <p className={styles.description}>
-                  {t('intro.biography')}
-                  {/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA. */}
-               </p>
+               <p className={styles.description}>{t('intro.biography')}</p>
             </div>
             <Section
                name={t('about.title')}
@@ -228,34 +143,11 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
                      .quality(95)
                      .delivery(dpr(auto()))}
                />
-               {/* <ThumborImage
-                  width={300}
-                  height={300}
-                  src={'dam-headshot.jpeg'}
-                  style={{
-                     borderRadius: '7%',
-                  }}
-                  thumborKey={thumbor}
-               /> */}
             </Section>
-
-            {/* <Section name="Diseño" id="design" width="1100px">
-               <BigCard
-                  config={configs.find((cfg: any) => {
-                     return cfg.name === 'design';
-                  })}
-               />
-            </Section> */}
 
             <Section name={t('projects.title')} id="projects" width="1000px">
                {projects.slice(0, 3).map((project) => {
-                  return (
-                     <ProjectCard
-                        key={project.title}
-                        project={project}
-                        thumbor={thumbor}
-                     />
-                  );
+                  return <ProjectCard key={project.title} project={project} />;
                })}
                <div className={styles.projects_grid}>
                   {projects.slice(3).map((project) => {
@@ -263,7 +155,6 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
                         <ProjectCardSmall
                            key={project.title}
                            project={project}
-                           thumbor={thumbor}
                         />
                      );
                   })}

@@ -1,21 +1,15 @@
 import React from 'react';
 import styles from '../styles/projectCard.module.scss';
 import { Project } from './projectCard.d';
-import ThumborImage from './thumborImage';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
-import Link from 'next/link';
 
 import { AdvancedImage } from '@cloudinary/react';
-import { CloudinaryImage, Cloudinary } from '@cloudinary/url-gen';
+import { Cloudinary } from '@cloudinary/url-gen';
 import { fill } from '@cloudinary/url-gen/actions/resize';
 import { dpr } from '@cloudinary/url-gen/actions/delivery';
 import { auto } from '@cloudinary/url-gen/qualifiers/dpr';
 
-import {
-   useTranslation,
-   useLanguageQuery,
-   LanguageSwitcher,
-} from 'next-export-i18n';
+import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 
 const myCld = new Cloudinary({ cloud: { cloudName: 'damiponce' } });
 const GH = (url: string) => {
@@ -35,15 +29,8 @@ const EL = (url: string) => {
 
 const USE_IMAGES = false;
 
-const ProjectCard = ({
-   project,
-   thumbor,
-}: {
-   project: Project;
-   thumbor: string;
-}) => {
+const ProjectCard = ({ project }: { project: Project }) => {
    const { t } = useTranslation();
-   const [query] = useLanguageQuery();
 
    return (
       <div className={styles.main}>
@@ -74,16 +61,6 @@ const ProjectCard = ({
             ) : (
                <div> </div>
             )}
-            {/* <ThumborImage
-               width={500}
-               height={500}
-               src={project.img}
-               layout="fill"
-               sizes="(max-width: 1500px) 500px"
-               objectFit="cover"
-               style={{ width: '100%', height: '100%' }}
-               thumborKey={thumbor}
-            /> */}
          </div>
       </div>
    );

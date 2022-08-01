@@ -1,14 +1,9 @@
 import React from 'react';
 import styles from '../styles/projectCardSmall.module.scss';
 import { Project } from './projectCard.d';
-import ThumborImage from './thumborImage';
 import { FiExternalLink } from 'react-icons/fi';
 
-import {
-   useTranslation,
-   useLanguageQuery,
-   LanguageSwitcher,
-} from 'next-export-i18n';
+import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 
 const Link = (url: string) => {
    return (
@@ -18,13 +13,7 @@ const Link = (url: string) => {
    );
 };
 
-const ProjectCard = ({
-   project,
-   thumbor,
-}: {
-   project: Project;
-   thumbor: string;
-}) => {
+const ProjectCard = ({ project }: { project: Project }) => {
    const { t } = useTranslation();
    const [query] = useLanguageQuery();
    return (

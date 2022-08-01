@@ -23,10 +23,8 @@
       "react-icons": "^4.3.1",
       "react-scripts": "^5.0.1",
       "react-scroll-parallax": "^3.0.3",
-      "react-thumbor-img": "^4.0.3",
       "sass": "^1.49.8",
-      "sharp": "^0.30.2",
-      "thumbor": "^0.1.5"
+      "sharp": "^0.30.2"
    },
    "devDependencies": {
       "@types/lodash": "^4.14.179",

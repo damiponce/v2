@@ -26,10 +26,9 @@ jobs:
               uses: actions/setup-node@v3
               with:
                   node-version: '16'
-            - run: npm install --legacy-peer-deps 
+            - run: npm install --legacy-peer-deps
             - run: npm run build
               env:
-                  THUMBOR_KEY: ${{ secrets.THUMBOR_KEY }}
                   CI: true
 
             - name: Deploy 🚀

@@ -40,8 +40,6 @@ const Navbar = () => {
    };
 
    useEffect(() => {
-      // console.log(prevScrollPos, scrolled);
-
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
    }, [prevScrollPos, scrolled, handleScroll]);
@@ -64,7 +62,6 @@ const Navbar = () => {
    }, []);
 
    const { t } = useTranslation();
-   const [query] = useLanguageQuery();
 
    const links = [
       { name: t('navbar.about'), id: 'about' },
@@ -78,12 +75,7 @@ const Navbar = () => {
             styles.header + ' ' + (scrolled ? styles.sticky : styles.hidden)
          }
          style={{
-            // // top: visible ? '0' : '-60px',
-            // top: 0,
-            // transform: `translate3d(0, ${
-            //    visible ? 0 : -1 * NAVBAR_HEIGHT
-            // }px, 0)`,
-            height: NAVBAR_HEIGHT + 'px',
+            height: `${NAVBAR_HEIGHT}px`,
          }}
          id="js-header"
       >
@@ -92,14 +84,14 @@ const Navbar = () => {
                <img src="/dp.svg" width="30" height="20" alt="" />
             </Link>
          </div>
-         <div className={styles.spacer}></div>
+         <div className={styles.spacer} />
          <div className={styles.burger} id="js-burger">
             <img src="/burger.svg" width="30" height="20" alt="" />
          </div>
          <div className={styles.links} id="js-menu">
             {links.map(({ name, id }, index) => {
                return (
-                  <Link href={'#' + id} passHref key={index}>
+                  <Link href={'#' + id} passHref key={id}>
                      <a
                         className={styles.link}
                         data-text={`0${index + 1}.`}
