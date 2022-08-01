@@ -106,6 +106,12 @@ const Navbar = () => {
                   </Link>
                );
             })}
+            <Link
+               href={'https://github.com/damiponce/cv/raw/main/cv.pdf'}
+               passHref
+            >
+               <a className={styles.link + ' ' + styles.resume}>Curriculum</a>
+            </Link>
          </div>
       </header>
    );

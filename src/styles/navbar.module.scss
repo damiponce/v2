@@ -118,6 +118,7 @@ $h1: 300px;
 .links {
    display: flex;
    column-gap: 32px;
+   align-items: baseline;
 }
 
 .link {
@@ -145,6 +146,13 @@ $h1: 300px;
    padding-inline-end: 0rem; //0.35rem
    font-size: 1em;
    opacity: 0.8;
+}
+
+.resume {
+   border: 1px solid #eee;
+   border-radius: 4px;
+   padding: 0.5rem;
+   padding-bottom: 0.3rem;
 }
 
 // .link:hover {

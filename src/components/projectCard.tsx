@@ -27,6 +27,8 @@ const EL = (url: string) => {
    );
 };
 
+const USE_IMAGES = false;
+
 const ProjectCard = ({
    project,
    thumbor,
@@ -51,13 +53,17 @@ const ProjectCard = ({
             </div>
          </div>
          <div className={styles.image}>
-            <AdvancedImage
-               cldImg={myCld
-                  .image(project.img)
-                  .resize(fill().width(500).height(500).gravity('face'))
-                  .quality(95)
-                  .delivery(dpr(auto()))}
-            />
+            {USE_IMAGES ? (
+               <AdvancedImage
+                  cldImg={myCld
+                     .image(project.img)
+                     .resize(fill().width(500).height(500).gravity('face'))
+                     .quality(95)
+                     .delivery(dpr(auto()))}
+               />
+            ) : (
+               <div> </div>
+            )}
             {/* <ThumborImage
                width={500}
                height={500}

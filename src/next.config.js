@@ -18,7 +18,13 @@ const nextConfig = {
       ],
    },
    module: {
-      rules: [{ test: /\.toml$/, use: 'raw-loader' }],
+      rules: [
+         { test: /\.toml$/, use: 'raw-loader' },
+         {
+            test: /\.(jpe?g|png|svg)$/i,
+            use: 'url-loader',
+         },
+      ],
    },
    webpack: (config, { isServer }) => {
       if (!isServer) {
