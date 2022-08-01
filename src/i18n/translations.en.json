@@ -21,7 +21,7 @@
     },
     "notee": {
       "title": "Notee",
-      "description": "A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source.\\n A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source."
+      "description": "A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source."
     },
     "penworld": {
       "title": "PenWorld",
@@ -29,11 +29,11 @@
     },
     "weather": {
       "title": "Weather App",
-      "description": "A website that displays the weather with data from a variety of weather APIs that the user can select."
+      "description": "A website that displays the weather with data from a variety of weather APIs the user can select."
     },
     "portfolio": {
       "title": "Portfolio v1",
-      "description": "My first try at making a personal website to show off my capabilities and skills. It's a bit of a mess, but it's a start."
+      "description": "My first try at making a personal website to show off my capabilities and skills."
     },
     "books": {
       "title": "Book sorting",
