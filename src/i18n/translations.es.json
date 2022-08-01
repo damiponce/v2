@@ -21,10 +21,12 @@
       "title": "Buscaminas"
     },
     "pendulum": {
-      "title": "Péndulo doble"
+      "title": "Péndulo doble",
+      "description": " "
     },
     "penworld": {
-      "title": "PenWorld"
+      "title": "PenWorld",
+      "description": " "
     },
     "portfolio": {
       "description": "Mi primer intento de hacer un sitio web personal para mostrar mis capacidades y habilidades. Es un poco complicado, pero es un comienzo.",

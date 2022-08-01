@@ -20,16 +20,6 @@
          "github": "https://github.com/damiponce/notee"
       }
    },
-   "penpal": {
-      "title": "PenWorld",
-      "desc": "",
-      "i18n": "projects.penworld",
-      "img": "sth.png",
-      "techs": ["React Native", "Firebase", "Android Studio", "Xcode"],
-      "links": {
-         "github": "https://github.com/damiponce/penworld"
-      }
-   },
    "weather": {
       "title": "Weather App",
       "desc": "A website that displays the weather with data from a variety of weather APIs that the user can select.",
@@ -59,6 +49,16 @@
       "techs": ["Javascript", "p5.js"],
       "links": {
          "github": "https://github.com/damiponce/book-sorting"
+      }
+   },
+   "penpal": {
+      "title": "PenWorld",
+      "desc": "",
+      "i18n": "projects.penworld",
+      "img": "sth.png",
+      "techs": ["React Native", "Firebase", "Android Studio", "Xcode"],
+      "links": {
+         "github": "https://github.com/damiponce/penworld"
       }
    },
    "morse": {

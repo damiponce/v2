@@ -8,6 +8,7 @@ import {
    useLanguageQuery,
    LanguageSwitcher,
 } from 'next-export-i18n';
+import { MdLanguage } from 'react-icons/md';
 
 const Navbar = () => {
    const NAVBAR_HEIGHT = 70;
@@ -121,6 +122,15 @@ const Navbar = () => {
                   {t('navbar.resume')}
                </a>
             </Link>
+            <div>
+               <LanguageSwitcher lang={'en'}>
+                  <MdLanguage size={22} /> <span>EN</span>
+               </LanguageSwitcher>
+               <LanguageSwitcher lang={'es'}>
+                  <MdLanguage size={22} />
+                  <span>ES</span>
+               </LanguageSwitcher>
+            </div>
          </div>
       </header>
    );
