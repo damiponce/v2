@@ -1,0 +1,66 @@
+{
+  "navbar": {
+    "about": "About me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "intro": {
+    "title": "Hi, I am Damián Ponce",
+    "biography": "I'm an amateur developer, and a graphic designer and photographer for fun."
+  },
+  "about": {
+    "title": "About me",
+    "description": "I'm an avionics technician with interests in coding, design, and photography. I'm currently studying electronical engineering. I am a very big self-learner, and tend to give attention to detail when working on something.\n\nSome of the languages and frameworks that I use:"
+  },
+  "projects": {
+    "title": "Projects",
+    "wpp": {
+      "title": "WhatsApp Stats",
+      "description": "A purely front-end web app that calculates and displays various statistics from an imported WhatsApp chat history. Designed with user trust in mind, it does all of the processing in the browser so no amount of the (very personal) data is transferred outside of the user's computer."
+    },
+    "notee": {
+      "title": "Notee",
+      "description": "A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source.\\n A note-taking app for Android and iOS built with React Native and Firebase. It's a simple way to keep your notes in one place. It's free and open source."
+    },
+    "penworld": {
+      "title": "PenWorld",
+      "description": ""
+    },
+    "weather": {
+      "title": "Weather App",
+      "description": "A website that displays the weather with data from a variety of weather APIs that the user can select."
+    },
+    "portfolio": {
+      "title": "Portfolio v1",
+      "description": "My first try at making a personal website to show off my capabilities and skills. It's a bit of a mess, but it's a start."
+    },
+    "books": {
+      "title": "Book sorting",
+      "description": "A small and simple web app I created in high school to sort my notebooks most efficiently for daily use."
+    },
+    "morse": {
+      "title": "Morse code generator",
+      "description": "Made for a school fair project, it uses an text input to trigger a relay connected to a strobe light, made to show morse code at an airfield tower."
+    },
+    "calc": {
+      "title": "Simple calculator",
+      "description": "A very basic (pun intended) and rudimentary calculator. It was a school assignment so it's not very polished but some stuff works."
+    },
+    "minesweeper": {
+      "title": "Minesweeper",
+      "description": "Tiny implementation of the classic Minesweeper game."
+    },
+    "pendulum": {
+      "title": "Double pendulum",
+      "description": ""
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "If you wish to contact me for hire or to work on a project, you can send an e-mail or a message through any of my socials:"
+  },
+  "footer": {
+    "built": "Built from scratch by"
+  }
+}

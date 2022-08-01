@@ -1,0 +1,64 @@
+{
+  "projects": {
+    "notee": {
+      "description": "Una aplicación para tomar notas para Android y iOS creada con React Native y Firebase. Es una manera simple de mantener tus notas en un solo lugar. Es gratis y open-source-",
+      "title": "Notee"
+    },
+    "morse": {
+      "description": "Hecho para un proyecto de feria escolar, utiliza una entrada de texto para activar un relé conectado a una luz estroboscópica, hecho para mostrar el código morse en una torre de aeródromo.",
+      "title": "Generador de codigo morse"
+    },
+    "books": {
+      "description": "Una aplicación web pequeña y simple que creé en la escuela secundaria para ordenar mis cuadernos de la manera más eficiente para el uso diario.",
+      "title": "Ordena-cuadernos"
+    },
+    "calc": {
+      "description": "Una calculadora muy básica y rudimentaria. Era una tarea de la escuela, por lo que no está muy pulida, pero algunas cosas funcionan.",
+      "title": "Calculadora sencilla"
+    },
+    "minesweeper": {
+      "description": "Pequeña implementación del clásico juego Buscaminas.",
+      "title": "Buscaminas"
+    },
+    "pendulum": {
+      "title": "Péndulo doble"
+    },
+    "penworld": {
+      "title": "PenWorld"
+    },
+    "portfolio": {
+      "description": "Mi primer intento de hacer un sitio web personal para mostrar mis capacidades y habilidades. Es un poco complicado, pero es un comienzo.",
+      "title": "Portfolio v1"
+    },
+    "title": "Proyectos",
+    "weather": {
+      "title": "Aplicación del tiempo",
+      "description": "Un sitio web que muestra el clima con datos de una variedad de APIs meteorológicas que el usuario puede seleccionar."
+    },
+    "wpp": {
+      "title": "Estadísticas de WhatsApp",
+      "description": "Una aplicación web front-end que calcula y muestra varias estadísticas de un historial de chat de WhatsApp importado. Diseñado pensando en la confianza del usuario, realiza todo el procesamiento en el navegador, por lo que ninguna cantidad de los datos (muy personales) se transfiere fuera de la computadora del usuario."
+    }
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy un técnico aviónico con intereses en la programación, el diseño y la fotografía. Actualmente estoy estudiando ingeniería electrónica. Soy una persona autodidacta, y muy atenta a los detalles finos al momento de trabajar en cualquier proyecto.\n\nAlgunos de los lenguajes y frameworks que manejo:"
+  },
+  "contact": {
+    "description": "Si deseas contactarte conmigo para contratarme o trabajar en algún proyecto, puedes enviarme un correo electrónico o un mensaje por alguna de mis redes:",
+    "title": "Contacto"
+  },
+  "footer": {
+    "built": "Construido desde cero por"
+  },
+  "intro": {
+    "title": "Hola, soy Damián Ponce",
+    "biography": "Soy un desarrollador aficionado, y un diseñador gráfico y fotógrafo por diversión."
+  },
+  "navbar": {
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "projects": "Proyectos",
+    "resume": "Curriculum"
+  }
+}
