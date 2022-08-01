@@ -3,6 +3,13 @@ import React, { useState, useEffect } from 'react';
 import styles from '../styles/navbar.module.scss';
 import throttle from 'lodash/throttle';
 
+import {
+   useTranslation,
+   useLanguageQuery,
+   LanguageSwitcher,
+} from 'next-export-i18n';
+import { MdLanguage } from 'react-icons/md';
+
 const Navbar = () => {
    const NAVBAR_HEIGHT = 70;
    const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -56,12 +63,13 @@ const Navbar = () => {
       navBarToggle.addEventListener('click', throttle(clicked, TIMEOUT * 2));
    }, []);
 
+   const { t } = useTranslation();
+   const [query] = useLanguageQuery();
+
    const links = [
-      { name: 'Sobre mi', id: 'about' },
-      // { name: 'Fotografía', id: 'photography' },
-      // { name: 'Diseño', id: 'design' },
-      { name: 'Proyectos', id: 'projects' },
-      { name: 'Contacto', id: 'contact' },
+      { name: t('navbar.about'), id: 'about' },
+      { name: t('navbar.projects'), id: 'projects' },
+      { name: t('navbar.contact'), id: 'contact' },
    ];
 
    return (
@@ -110,8 +118,19 @@ const Navbar = () => {
                href={'https://github.com/damiponce/cv/raw/main/cv.pdf'}
                passHref
             >
-               <a className={styles.link + ' ' + styles.resume}>Curriculum</a>
+               <a className={styles.link + ' ' + styles.resume}>
+                  {t('navbar.resume')}
+               </a>
             </Link>
+            <div>
+               <LanguageSwitcher lang={'en'}>
+                  <MdLanguage size={22} /> <span>EN</span>
+               </LanguageSwitcher>
+               <LanguageSwitcher lang={'es'}>
+                  <MdLanguage size={22} />
+                  <span>ES</span>
+               </LanguageSwitcher>
+            </div>
          </div>
       </header>
    );

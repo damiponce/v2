@@ -324,3 +324,18 @@ img[style*='filter:blur(20px)'] {
    border-radius: 0px;
 }
 */
+
+[data-language-switcher] {
+   height: 1.5em; 
+   width: 4em;
+   cursor: pointer;
+   color: #eee;
+   svg {vertical-align: middle;}
+   span {vertical-align: baseline; font-family: Overpass Mono; font-size: 0.8em; font-weight: 500;}
+
+
+}
+
+[data-is-current=true] {
+   display: none
+}

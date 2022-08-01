@@ -11,6 +11,12 @@ import { fill } from '@cloudinary/url-gen/actions/resize';
 import { dpr } from '@cloudinary/url-gen/actions/delivery';
 import { auto } from '@cloudinary/url-gen/qualifiers/dpr';
 
+import {
+   useTranslation,
+   useLanguageQuery,
+   LanguageSwitcher,
+} from 'next-export-i18n';
+
 const myCld = new Cloudinary({ cloud: { cloudName: 'damiponce' } });
 const GH = (url: string) => {
    return (
@@ -36,10 +42,14 @@ const ProjectCard = ({
    project: Project;
    thumbor: string;
 }) => {
+   const { t } = useTranslation();
+   const [query] = useLanguageQuery();
+
    return (
       <div className={styles.main}>
          <div className={styles.data}>
-            <h3>{project.title}</h3> <p>{project.desc}</p>
+            <h3>{t(project.i18n + '.title')}</h3>{' '}
+            <p>{t(project.i18n + '.description')}</p>
             <div className={styles.techs}>
                {project.techs.map((tech) => (
                   <span key={tech}>{tech}</span>

@@ -39,6 +39,12 @@ import { auto } from '@cloudinary/url-gen/qualifiers/dpr';
 
 const myCld = new Cloudinary({ cloud: { cloudName: 'damiponce' } });
 
+import {
+   useTranslation,
+   useLanguageQuery,
+   LanguageSwitcher,
+} from 'next-export-i18n';
+
 // export const getStaticProps: GetStaticProps = async (context) => {
 //    let configs: { name: string; config: string }[] = [];
 
@@ -127,6 +133,9 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
    //    projects.push(value);
    // }
 
+   const { t } = useTranslation();
+   const [query] = useLanguageQuery();
+
    return (
       <div className={styles.container}>
          {/* <ParallaxBanner
@@ -157,35 +166,20 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
 
          <main className={styles.main}>
             <div className={styles.intro}>
-               <h1 className={styles.title}>
-                  <b>
-                     Hola, soy
-                     <br />
-                  </b>
-                  Damián Ponce.
-               </h1>
+               <h1 className={styles.title}>{t('intro.title')}</h1>
                <p className={styles.description}>
-                  Soy un desarrollador aficionado, y un diseñador gráfico y
-                  fotógrafo por diversión.
+                  {t('intro.biography')}
                   {/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA. */}
                </p>
             </div>
             <Section
-               name="Sobre mi"
+               name={t('about.title')}
                id="about"
                width="800px"
                gridCols="auto / 3fr 2fr"
             >
                <div>
-                  <p>
-                     Soy un técnico aviónico con intereses en la programación,
-                     el diseño y la fotografía. Actualmente estoy estudiando
-                     ingeniería electrónica. Soy una persona autodidacta, y muy
-                     atenta a los detalles finos al momento de trabajar en
-                     cualquier proyecto.
-                     <br />
-                     <br /> Algunos de los lenguajes y frameworks que manejo:
-                  </p>
+                  <p>{t('about.description')}</p>
                   <div className={styles.proficiencies}>
                      <ul>
                         <li>
@@ -253,7 +247,7 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
                />
             </Section> */}
 
-            <Section name="Proyectos" id="projects" width="1000px">
+            <Section name={t('projects.title')} id="projects" width="1000px">
                {projects.slice(0, 3).map((project) => {
                   return (
                      <ProjectCard
@@ -276,13 +270,9 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
                </div>
             </Section>
 
-            <Section name="Contacto" id="contact" width="600px">
+            <Section name={t('contact.title')} id="contact" width="600px">
                <div>
-                  <p>
-                     Si deseas contactarte conmigo para contratarme o trabajar
-                     en algún proyecto, puedes enviarme un correo electrónico o
-                     un mensaje por alguna de mis redes:
-                  </p>
+                  <p>{t('contact.description')}</p>
                   <div className={styles.contact_button_list}>
                      <Link href="mailto:dami.ponce8@gmail.com">
                         <a target="_blank" rel="noopener noreferrer">
@@ -319,7 +309,7 @@ const Home: NextPage<HomeTypes> = ({ configs, thumbor }) => {
 
          <footer className={styles.footer}>
             <p>
-               Built from scratch by{' '}
+               {t('footer.built')}{' '}
                <b>
                   <a
                      href="https://github.com/damiponce/damiponce.github.io"
