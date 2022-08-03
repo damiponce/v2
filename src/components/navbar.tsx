@@ -102,11 +102,12 @@ const Navbar = () => {
                   </Link>
                );
             })}
-            <Link
-               href={'https://github.com/damiponce/cv/raw/main/cv.pdf'}
-               passHref
-            >
-               <a className={styles.link + ' ' + styles.resume}>
+            <Link href={`./${t('resume')}`} passHref>
+               <a
+                  className={styles.link + ' ' + styles.resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
                   {t('navbar.resume')}
                </a>
             </Link>
