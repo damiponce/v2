@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
     "i18n-ally.localesPaths": ["src/i18n", "src/out/locales"],
     "i18n-ally.keystyle": "nested",
     "i18n-ally.extract.autoDetect": false
+=======
+    "i18n-ally.localesPaths": ["src/out/locales"]
+>>>>>>> Stashed changes
 }

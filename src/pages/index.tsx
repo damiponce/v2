@@ -25,7 +25,7 @@ import { auto } from '@cloudinary/url-gen/qualifiers/dpr';
 
 const myCld = new Cloudinary({ cloud: { cloudName: 'damiponce' } });
 
-import { useTranslation, useLanguageQuery } from 'next-export-i18n';
+import { useTranslation } from 'next-export-i18n';
 
 const Section = ({
    children,
@@ -65,7 +65,6 @@ const Home: NextPage<HomeTypes> = ({ configs }) => {
    }
 
    const { t } = useTranslation();
-   const [query] = useLanguageQuery();
 
    return (
       <div className={styles.container}>
@@ -146,11 +145,11 @@ const Home: NextPage<HomeTypes> = ({ configs }) => {
             </Section>
 
             <Section name={t('projects.title')} id="projects" width="1000px">
-               {projects.slice(0, 3).map((project) => {
+               {projects.slice(0, 2).map((project) => {
                   return <ProjectCard key={project.title} project={project} />;
                })}
                <div className={styles.projects_grid}>
-                  {projects.slice(3).map((project) => {
+                  {projects.slice(2).map((project) => {
                      return (
                         <ProjectCardSmall
                            key={project.title}

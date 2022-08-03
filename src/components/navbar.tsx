@@ -3,11 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styles from '../styles/navbar.module.scss';
 import throttle from 'lodash/throttle';
 
-import {
-   useTranslation,
-   useLanguageQuery,
-   LanguageSwitcher,
-} from 'next-export-i18n';
+import { useTranslation, LanguageSwitcher } from 'next-export-i18n';
 import { MdLanguage } from 'react-icons/md';
 
 const Navbar = () => {

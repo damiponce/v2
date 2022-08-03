@@ -3,7 +3,7 @@ import styles from '../styles/projectCardSmall.module.scss';
 import { Project } from './projectCard.d';
 import { FiExternalLink } from 'react-icons/fi';
 
-import { useTranslation, useLanguageQuery } from 'next-export-i18n';
+import { useTranslation } from 'next-export-i18n';
 
 const Link = (url: string) => {
    return (
@@ -15,7 +15,6 @@ const Link = (url: string) => {
 
 const ProjectCard = ({ project }: { project: Project }) => {
    const { t } = useTranslation();
-   const [query] = useLanguageQuery();
    return (
       <div className={styles.main}>
          <div className={styles.header}>

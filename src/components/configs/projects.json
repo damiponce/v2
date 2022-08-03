@@ -3,11 +3,22 @@
       "title": "WhatsApp Stats",
       "desc": "A purely frontend web app that calculates and displays various statistics from an imported WhatsApp chat history. Designed with user trust in mind, it does all of the processing in the browser so no amount of the (very personal) data is transferred outside of the user's computer.",
       "i18n": "projects.wpp",
-      "img": "sth.png",
+      "img": "analyser_i6nf3f.webp",
       "techs": ["React (Next.js)", "Python (Pandas)"],
       "links": {
          "github": "https://github.com/damiponce/chat-analyser",
          "website": "https://damiponce.github.io/chat-analyser/"
+      }
+   },
+   "v1": {
+      "title": "Portfolio v1",
+      "desc": "My first try at making a personal website to show off my capabilities and skills. It's a bit of a mess, but it's a start.",
+      "i18n": "projects.portfolio",
+      "img": "v1_tjdpcv.png",
+      "techs": ["React (Next.js)"],
+      "links": {
+         "github": "https://github.com/damiponce/v1",
+         "website": "https://damiponce.github.io/v1/"
       }
    },
    "notes": {
@@ -30,17 +41,7 @@
          "github": "https://github.com/damiponce/weather-web"
       }
    },
-   "v1": {
-      "title": "Portfolio v1",
-      "desc": "My first try at making a personal website to show off my capabilities and skills. It's a bit of a mess, but it's a start.",
-      "i18n": "projects.portfolio",
-      "img": "dam-headshot.jpeg",
-      "techs": ["React (Next.js)"],
-      "links": {
-         "github": "https://github.com/damiponce/v1",
-         "website": "https://damiponce.github.io/v1/"
-      }
-   },
+
    "books": {
       "title": "Book sorting",
       "desc": "A small and simple web app I created in high school to sort my notebooks most efficiently for daily use.",

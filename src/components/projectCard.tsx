@@ -9,7 +9,7 @@ import { fill } from '@cloudinary/url-gen/actions/resize';
 import { dpr } from '@cloudinary/url-gen/actions/delivery';
 import { auto } from '@cloudinary/url-gen/qualifiers/dpr';
 
-import { useTranslation, useLanguageQuery } from 'next-export-i18n';
+import { useTranslation } from 'next-export-i18n';
 
 const myCld = new Cloudinary({ cloud: { cloudName: 'damiponce' } });
 const GH = (url: string) => {
@@ -27,7 +27,7 @@ const EL = (url: string) => {
    );
 };
 
-const USE_IMAGES = false;
+const USE_IMAGES = true;
 
 const ProjectCard = ({ project }: { project: Project }) => {
    const { t } = useTranslation();
@@ -49,19 +49,23 @@ const ProjectCard = ({ project }: { project: Project }) => {
                   : null}
             </div>
          </div>
-         <div className={styles.image}>
-            {USE_IMAGES ? (
+         {/* <div className={styles.image}> */}
+         {USE_IMAGES ? (
+            <>
+               {/* <div className={styles.blur} /> */}
                <AdvancedImage
+                  className={styles.image}
                   cldImg={myCld
                      .image(project.img)
-                     .resize(fill().width(500).height(500).gravity('face'))
+                     .resize(fill().width(600).gravity('face'))
                      .quality(95)
                      .delivery(dpr(auto()))}
                />
-            ) : (
-               <div> </div>
-            )}
-         </div>
+            </>
+         ) : (
+            <div> </div>
+         )}
+         {/* </div> */}
       </div>
    );
 };
