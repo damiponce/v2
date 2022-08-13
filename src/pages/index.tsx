@@ -145,11 +145,11 @@ const Home: NextPage<HomeTypes> = ({ configs }) => {
             </Section>
 
             <Section name={t('projects.title')} id="projects" width="1000px">
-               {projects.slice(0, 2).map((project) => {
+               {projects.slice(0, 3).map((project) => {
                   return <ProjectCard key={project.title} project={project} />;
                })}
                <div className={styles.projects_grid}>
-                  {projects.slice(2).map((project) => {
+                  {projects.slice(3).map((project) => {
                      return (
                         <ProjectCardSmall
                            key={project.title}

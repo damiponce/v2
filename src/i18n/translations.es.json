@@ -33,6 +33,10 @@
          "description": "Mi primer intento de hacer un sitio web personal para mostrar mis capacidades y habilidades.",
          "title": "Portfolio v1"
       },
+      "3dnoise": {
+         "title": "Ruido 3D",
+         "description": "Una demostración gráfica de ruidos multidimensionales de una manera elegante."
+      },
       "title": "Proyectos",
       "weather": {
          "title": "Aplicación del tiempo",

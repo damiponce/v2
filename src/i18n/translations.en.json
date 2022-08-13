@@ -36,6 +36,10 @@
          "title": "Portfolio v1",
          "description": "My first try at making a personal website to show off my capabilities and skills."
       },
+      "3dnoise": {
+         "title": "3D Noise",
+         "description": "A showcase of gradient noise shown in a pretty way."
+      },
       "books": {
          "title": "Book sorting",
          "description": "A small and simple web app I created in high school to sort my notebooks most efficiently for daily use."

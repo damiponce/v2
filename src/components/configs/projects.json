@@ -14,11 +14,22 @@
       "title": "Portfolio v1",
       "desc": "My first try at making a personal website to show off my capabilities and skills. It's a bit of a mess, but it's a start.",
       "i18n": "projects.portfolio",
-      "img": "v1_tjdpcv.png",
+      "img": "v1_tjdpcv.webp",
       "techs": ["React (Next.js)"],
       "links": {
          "github": "https://github.com/damiponce/v1",
          "website": "https://damiponce.github.io/v1/"
+      }
+   },
+   "3dnoise": {
+      "title": "3D Noise",
+      "desc": "My first try at making a personal website to show off my capabilities and skills. It's a bit of a mess, but it's a start.",
+      "i18n": "projects.3dnoise",
+      "img": "3dnoise_igynal.webp",
+      "techs": ["React (Gatsby)", "three.js"],
+      "links": {
+         "github": "https://github.com/damiponce/3d-noise",
+         "website": "https://damiponce.github.io/3d-noise/"
       }
    },
    "notes": {
