@@ -109,6 +109,9 @@ const Home: NextPage<HomeTypes> = ({ configs }) => {
                                  <FiCornerDownRight /> React
                               </li>
                               <li>
+                                 <FiCornerDownRight /> Next.js
+                              </li>
+                              <li>
                                  <FiCornerDownRight /> React Native
                               </li>
                            </ul>
@@ -171,13 +174,13 @@ const Home: NextPage<HomeTypes> = ({ configs }) => {
                            </button>
                         </a>
                      </Link>
-                     <Link href="https://wa.me/5491134290789">
+                     {/* <Link href="https://wa.me/5491134290789">
                         <a target="_blank" rel="noopener noreferrer">
                            <button className={styles.contact_button}>
                               <FaWhatsapp size={22} />
                            </button>
                         </a>
-                     </Link>
+                     </Link> */}
                      <Link href="https://github.com/damiponce">
                         <a target="_blank" rel="noopener noreferrer">
                            <button className={styles.contact_button}>
