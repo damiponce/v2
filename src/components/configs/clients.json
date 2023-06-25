@@ -1,0 +1,22 @@
+{
+   "dreambuilders": {
+      "title": "DreamBuilders",
+      "desc": "-",
+      "i18n": "clients.dreambuilders",
+      "img": "SCR-20230625-20d_awvq99.webp",
+      "techs": ["React (Next.js)", "Vercel", "Tailwind CSS", "TypeScript"],
+      "links": {
+         "website": "https://dreambuilders.cl"
+      }
+   },
+   "botaaguas": {
+      "title": "BotaAguas",
+      "desc": "-",
+      "i18n": "clients.botaaguas",
+      "img": "SCR-20230625-216_hlwcqr.webp",
+      "techs": ["React (Next.js)", "Vercel", "Tailwind CSS", "TypeScript"],
+      "links": {
+         "website": "https://botaaguas.cl"
+      }
+   }
+}

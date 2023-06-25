@@ -1,5 +1,16 @@
 {
    "resume": "cv.pdf",
+   "clients": {
+      "dreambuilders": {
+         "title": "DreamBuilders",
+         "description": "DreamBuilders es una empresa especializada en la construcción de casas de madera. El sitio web fue creado para mostrar información sobre la empresa, demostrar sus capacidades y proyectos, y para que los clientes puedan contactarlos."
+      },
+      "botaaguas": {
+         "title": "Botaaguas",
+         "description": "Botaaguas es una empresa que se dedica a la fabricación y venta de bota aguas para camiones. El sitio web fue creado para mostrar información sobre los productos que venden, y para que los clientes puedan comprarlos."
+      },
+      "title": "Clientes"
+   },
    "projects": {
       "notee": {
          "description": "Una aplicación para tomar notas para Android y iOS creada con React Native y Firebase. Es una manera simple de mantener tus notas en un solo lugar. Es gratis y open-source-",
@@ -65,6 +76,7 @@
    "navbar": {
       "about": "Sobre mí",
       "contact": "Contacto",
+      "clients": "Clientes",
       "projects": "Proyectos",
       "resume": "Curriculum"
    }

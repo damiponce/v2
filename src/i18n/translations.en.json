@@ -2,6 +2,7 @@
    "resume": "cv_en.pdf",
    "navbar": {
       "about": "About me",
+      "clients": "Clients",
       "projects": "Projects",
       "contact": "Contact",
       "resume": "Resume"
@@ -13,6 +14,17 @@
    "about": {
       "title": "About me",
       "description": "I'm an avionics technician with interests in coding, design, and photography. I'm currently studying electronical engineering. I am a very big self-learner, and tend to give attention to detail when working on something.\n\nSome of the languages and frameworks that I use:"
+   },
+   "clients": {
+      "dreambuilders": {
+         "title": "DreamBuilders",
+         "description": "DreamBuilders is a company specialized in the construction of wooden houses. The website was created to showcase information about the company, demonstrate its capabilities and projects, and allow customers to contact them."
+      },
+      "botaaguas": {
+         "title": "Botaaguas",
+         "description": "Botaaguas is a company dedicated to the manufacturing and sale of truck rain guards. The website was created to display information about the products they sell and enable customers to purchase them."
+      },
+      "title": "Clients"
    },
    "projects": {
       "title": "Projects",

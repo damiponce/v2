@@ -26,6 +26,7 @@ import { auto } from '@cloudinary/url-gen/qualifiers/dpr';
 const myCld = new Cloudinary({ cloud: { cloudName: 'damiponce' } });
 
 import { useTranslation } from 'next-export-i18n';
+import ClientCard from '../components/clientCard';
 
 const Section = ({
    children,
@@ -57,11 +58,20 @@ interface HomeTypes {
 }
 
 const Home: NextPage<HomeTypes> = ({ configs }) => {
-   let testConfig = require('../components/configs/projects.json');
    let projects: Project[] = [];
-   for (const [key, value] of Object.entries(testConfig)) {
+   for (const [key, value] of Object.entries(
+      require('../components/configs/projects.json')
+   )) {
       //@ts-ignore
       projects.push(value);
+   }
+
+   let clients: Project[] = [];
+   for (const [key, value] of Object.entries(
+      require('../components/configs/clients.json')
+   )) {
+      //@ts-ignore
+      clients.push(value);
    }
 
    const { t } = useTranslation();
@@ -119,6 +129,9 @@ const Home: NextPage<HomeTypes> = ({ configs }) => {
                      </ul>
                      <ul>
                         <li>
+                           <FiChevronRight /> Vercel
+                        </li>
+                        <li>
                            <FiChevronRight /> LaTeX
                         </li>
                         <li>
@@ -145,6 +158,12 @@ const Home: NextPage<HomeTypes> = ({ configs }) => {
                      .quality(95)
                      .delivery(dpr(auto()))}
                />
+            </Section>
+
+            <Section name={t('clients.title')} id="projects" width="1000px">
+               {clients.map((project) => {
+                  return <ClientCard key={project.title} client={project} />;
+               })}
             </Section>
 
             <Section name={t('projects.title')} id="projects" width="1000px">

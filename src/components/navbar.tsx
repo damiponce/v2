@@ -61,6 +61,7 @@ const Navbar = () => {
 
    const links = [
       { name: t('navbar.about'), id: 'about' },
+      { name: t('navbar.clients'), id: 'clients' },
       { name: t('navbar.projects'), id: 'projects' },
       { name: t('navbar.contact'), id: 'contact' },
    ];
